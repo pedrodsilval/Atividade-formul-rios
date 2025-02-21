@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro do Cliente</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p> <label for="nome_completo">Nome completo <br></label> <input required type="text" name="nome_completo" id="nome_completo"></p>
+
+        <p><label for="email">E-mail <br></label> <input required type="email" name="email" autocomplete="email" id="email"></p>
+
+        <p><label for="telefone">Telefone <br></label> <input required type="tel" name="telefone" autocomplete="tel-area-code" id="telefone" pattern="^\(\[0-9]{2}\)\[0-9]{4,5}-[0-9]{4}$"></p>
+
+        <p><label for="data_nascimento">Data de nascimento <br></label> <input required type="text" name="data_nascimento" id="data_nascimento"></p>
+
+        <p> <a href="termos.html">Aceitação dos termos</a> <input required type="checkbox" value=""></p>
+        
+        <input type="submit" name="enviar" id="enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+</body>
+</html>
